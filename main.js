@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 
-app.post('/api1/test',CONTROLLER.APP_CONTROLLER)
+app.get('/api1/test',CONTROLLER.APP_CONTROLLER)
 
 
 app.listen(PORT, () => {
