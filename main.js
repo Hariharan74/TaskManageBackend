@@ -14,7 +14,12 @@ app.use(cors());
 app.use(express.json());
 
 
-app.get('/api1/test',CONTROLLER.APP_CONTROLLER)
+
+app.post('/api1/test',CONTROLLER.APP_CONTROLLER)
+app.post(APP_CONFIG.urlmodel+'signup/post',CONTROLLER.APP_CONTROLLER)
+app.post(APP_CONFIG.urlmodel+'signin/post',CONTROLLER.APP_CONTROLLER)
+
+
 
 
 app.listen(PORT, () => {

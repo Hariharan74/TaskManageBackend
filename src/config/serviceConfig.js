@@ -1,5 +1,7 @@
 const CONFIGS = {
-    "listeningPort":5000
+    "listeningPort":5000,
+    "urlmodel":'/taskmanage/'
+    
 }
 
 module.exports = {
