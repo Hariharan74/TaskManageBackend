@@ -4,6 +4,7 @@ const sqlite3 = require('sqlite3').verbose();
 const queryrun = (query)=>{
     let result = []
     let status = true
+    console.log(__dirname)
     const DB = new sqlite3.Database(__dirname.replace('config','db')+'/.taskmanageDB', (err) => {
         if (err) {
             status = false
